@@ -21,7 +21,7 @@ module.exports = (function(){
     bg = {
         els: [],
         init: function(elements){
-            // Take all jQuery objects passed and add to element list. 
+            // Take all objects passed and add to element list. 
             this.els = Array.prototype.slice.call(arguments);
             // Initial colour set
             this.set(hextime());
@@ -29,9 +29,13 @@ module.exports = (function(){
             this.loop();
         },
         set: function(hex){
-            // Change the colour of every jQuery object in the element list.
-            this.els.forEach(function(jqel){
-                jqel.css({background: hex});
+            // Change the colour of every object in the element list.
+            this.els.forEach(function(el){
+                if(el instanceof jQuery){
+                    el.css({background: hex});
+                } else {
+                    el.style.background = hex;
+                }
             });
         },
         loop: function(){
