@@ -1,7 +1,7 @@
 {
   "name": "hextimebg",
-  "version": "0.0.1",
-  "description": "Tiny, simple project. Pass in one or more jQuery selectors and it'll automatically update their background colour every second. Derives the colour from the current hour, minute and second and expresses as a HEX value.",
+  "version": "0.0.2",
+  "description": "Tiny, simple project. Pass in one or more selectors (including jQuery selectors) and it'll automatically update their background colour every second. Derives the colour from the current hour, minute and second and expresses as a HEX value.",
   "main": "hextimebg.min.js",
   "repository": {
     "type": "git",
@@ -11,8 +11,7 @@
     "time",
     "hex",
     "colour",
-    "background",
-    "jquery"
+    "background"
   ],
   "author": "Richard Foster",
   "license": "MIT",
