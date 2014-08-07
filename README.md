@@ -8,4 +8,5 @@ hexbg.init($("body"), $("nav"));
 ```
 
 To stop: ```hexbg.stop()```
+
 To restart: ```hexbg.loop()```
