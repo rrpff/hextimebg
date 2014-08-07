@@ -31,6 +31,7 @@ module.exports = (function(){
         set: function(hex){
             // Change the colour of every object in the element list.
             this.els.forEach(function(el){
+                // Determine if jQuery selector.
                 if(el instanceof jQuery){
                     el.css({background: hex});
                 } else {
